@@ -46,8 +46,8 @@ const RELACIONES_ACCION = {
     'hacer abalorios': {
         animal: 'conejo',
         instrumento: 'collar',
-        imgCuello: crearImagenEnLinea('OTROS', 'cuello.jpg'),
-        descripcion: `PARA EL ${crearImagenEnLinea('OTROS', 'cuello.jpg')}`
+        imgCuello: crearImagenEnLinea('OTROS', 'cuello.png'),
+        descripcion: `PARA EL ${crearImagenEnLinea('OTROS', 'cuello.png')}`
     },
     'pescar': {
         animal: 'ciervo',
@@ -58,8 +58,8 @@ const RELACIONES_ACCION = {
     'raspar piel': {
         animal: 'bisonte',
         instrumento: 'raspador',
-        imgPieles: crearImagenEnLinea('OTROS', 'pieles.jpg'),
-        descripcion: `PARA PREPARAR ${crearImagenEnLinea('OTROS', 'pieles.jpg')}`
+        imgPieles: crearImagenEnLinea('OTROS', 'pieles.png'),
+        descripcion: `PARA PREPARAR ${crearImagenEnLinea('OTROS', 'pieles.png')}`
     }
 };
 
@@ -170,7 +170,7 @@ function elegirAccion(accion) {
     const imgAccion = crearImagenEnLinea(rutaAccion.slice(0, -1), nombreArchivo);
     const imgAnimal = crearImagenEnLinea('animales', `${relacion.animal}.png`);
     const imgInstrumento = crearImagenEnLinea('instrumento', `${relacion.instrumento}.png`);
-    const imgHueso = crearImagenEnLinea('OTROS', 'hueso.jpeg');
+    const imgHueso = crearImagenEnLinea('OTROS', 'hueso.png');
     
     const textoAnterior = `<span style="color: #666666;">${historia.cuentoActual}</span>`;
     
