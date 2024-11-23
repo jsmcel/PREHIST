@@ -34,8 +34,8 @@ const RELACIONES_ACCION = {
     'cortar madera': {
         animal: 'bisonte',
         instrumento: 'hacha',
-        imgFuego: crearImagenEnLinea('OTROS', 'fuego.png'),
-        descripcion: `PARA HACER ${crearImagenEnLinea('OTROS', 'fuego.png')}`
+        imgfuego: crearImagenEnLinea('OTROS', 'FUEGO.png'),
+        descripcion: `PARA HACER ${crearImagenEnLinea('OTROS', 'FUEGO.png')}`
     },
     'coser': {
         animal: 'caballo',
@@ -170,7 +170,7 @@ function elegirAccion(accion) {
     const imgAccion = crearImagenEnLinea(rutaAccion.slice(0, -1), nombreArchivo);
     const imgAnimal = crearImagenEnLinea('animales', `${relacion.animal}.png`);
     const imgInstrumento = crearImagenEnLinea('instrumento', `${relacion.instrumento}.png`);
-    const imgHueso = crearImagenEnLinea('OTROS', 'hueso.png');
+    const imgHueso = crearImagenEnLinea('OTROS', 'HUESO.png');
     
     const textoAnterior = `<span style="color: #666666;">${historia.cuentoActual}</span>`;
     
